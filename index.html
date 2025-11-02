@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rana'ya Büyük Sürpriz!</title>
+    
+    <link rel="stylesheet" href="style.css?v=1.3">
+</head>
+<body>
+    <div class="container">
+        
+        <div id="step1">
+            <h2 id="initialMessage">RANA OLDUĞUNU DOĞRULAMAMIZ GEREKİYOR!</h2>
+            <button id="startButton">RANA'YA ÖZEL BAŞLAT</button>
+        </div>
+
+        <div id="step2" class="hidden">
+            <h3 id="q1Text">1. Soru: ONUR'U SEVİYOR MUSUN?</h3>
+            <div class="button-group">
+                <button id="q1Yes" class="btn-success">EVET</button>
+                <button id="q1No" class="btn-danger">HAYIR</button>
+            </div>
+        </div>
+
+        <div id="step3" class="hidden">
+            <h3 id="q2Text">2. Soru: RANA'NIN EN SEVDİĞİ TATLI NEDİR?</h3>
+            <input type="text" id="q2Answer" placeholder="Cevabını buraya yaz..." autocomplete="off">
+            <button id="submitAnswer3" class="btn-primary">DOĞRULA</button>
+            <p id="q2Feedback" class="feedback-text"></p>
+        </div>
+        
+        <div id="step4" class="hidden">
+            <h3 id="q3Text">3. Soru: RANA'NIN EN SEVDİĞİ RENK NEDİR?</h3>
+            <input type="text" id="q3Answer" placeholder="Cevabını buraya yaz..." autocomplete="off">
+            <button id="submitAnswer4" class="btn-primary">DOĞRULA</button>
+            <p id="q3Feedback" class="feedback-text"></p>
+        </div>
+
+        <div id="step5" class="hidden">
+            <h3 id="q4Text">4. Soru: RANA'NIN EN SEVDİĞİ MEYVE NEDİR?</h3>
+            <input type="text" id="q4Answer" placeholder="Cevabını buraya yaz..." autocomplete="off">
+            <button id="submitAnswer5" class="btn-primary">DOĞRULA</button>
+            <p id="q4Feedback" class="feedback-text"></p>
+        </div>
+
+        <div id="step6" class="hidden">
+            <h3 id="q5Text">5. Soru: SON ZAMANLARDA EN ÇOK HOŞUNA GİDEN HİTAP NEDİR?</h3>
+            <input type="text" id="q5Answer" placeholder="Cevabını buraya yaz..." autocomplete="off">
+            <button id="submitAnswer6" class="btn-primary">DOĞRULA</button>
+            <p id="q5Feedback" class="feedback-text"></p>
+        </div>
+
+        <div id="finalSurprise" class="hidden">
+            <img id="ranaSmallImage" src="rana_kucuk.jpg" alt="Rana" class="rana-small-image">
+            <h1 id="finalGreeting">İYİ Kİ DOĞDUN AŞKIM!</h1>
+            <p id="onurMessage">ONUR SENİ ÇOK SEVİYOR ❤️</p>
+        </div>
+    </div>
+    
+    <div class="heart-container"></div> 
+    
+    <script src="script.js"></script>
+</body>
+</html>
